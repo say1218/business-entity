@@ -292,7 +292,7 @@ function App() {
 						<div>
 							<label htmlFor='updatedBy'>Updated By</label>
 							<input
-								type='number'
+								type='text'
 								id='updatedBy'
 								name='updatedBy'
 								placeholder='Updated By'
@@ -405,7 +405,7 @@ function App() {
 						</div>
 
 						<div>
-							<label htmlFor='cmDirtyInd'>Rowid Object : </label>
+							<label htmlFor='cmDirtyInd'>Content metadata dirty Ind : </label>
 							<input
 								type='number'
 								id='cmDirtyInd'
@@ -458,7 +458,8 @@ function App() {
 				<div className='output-section-item'>
 					<h4>
 						This section details the touched fields in original{}, all other
-						fields(touched or untouched) in the other half of the JSON
+						fields(touched or untouched) in the other half of the JSON. This
+						also includes the hidden fields
 					</h4>
 					<pre>
 						{Object.keys(outputData.original).length > 0 &&
@@ -480,6 +481,14 @@ function App() {
 						{!Object.keys(shortOutputData.original).length > 0 && (
 							<p>No form fields have been touched</p>
 						)}
+					</pre>
+				</div>
+				<div className='output-section-item'>
+					<h4>Note</h4>
+					<pre>
+						1. All hidden fields are read-only 2. Generation Suffix Cd is also
+						read-only 3. Focus has been given more on JS, and less on css 4.
+						Optimisations can be done in component restructure
 					</pre>
 				</div>
 			</div>
