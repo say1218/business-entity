@@ -484,11 +484,19 @@ function App() {
 					</pre>
 				</div>
 				<div className='output-section-item'>
-					<h4>Note</h4>
+					<h4>Notes</h4>
 					<pre>
-						1. All hidden fields are read-only 2. Generation Suffix Cd is also
-						read-only 3. Focus has been given more on JS, and less on css 4.
-						Optimisations can be done in component restructure
+						<ul>
+							<li>All hidden fields are read-only. </li>
+							<li>
+								Generation Suffix Cd is also read-only(as per entityMeta.json)
+							</li>
+							<li>Focus has been given more on JS, and less on css</li>
+							<li>
+								Optimisations to be be done in component restructure, and
+								validation check in useForm
+							</li>
+						</ul>
 					</pre>
 				</div>
 			</div>

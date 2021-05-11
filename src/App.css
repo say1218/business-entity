@@ -45,6 +45,11 @@ button[name="toggle"] {
 	background-color: #398be9;
 }
 
+ul {
+	white-space: normal;
+	word-wrap: break-word;
+}
+
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
 		animation: App-logo-spin infinite 20s linear;
